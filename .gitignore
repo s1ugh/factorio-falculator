@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+
+*.json
+data_for_factorio/
+
+.DS_Store
