@@ -6,3 +6,5 @@ __pycache__/
 data_for_factorio/
 
 .DS_Store
+
+.env
