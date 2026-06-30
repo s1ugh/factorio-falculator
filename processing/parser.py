@@ -4,11 +4,15 @@ This file was created to parse the Factorio dump
 
 """
 
+from pathlib import Path
 import json
 
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 DUMP_FACTORIO_JSON = "/Users/s1ugh/Library/Application Support/factorio/script-output/data-raw-dump.json"
-ITEMS_FACTORIO_JSON = "items_factorio.json"
-RECIPE_JSON = "recipe_factorio.json"
+ITEMS_FACTORIO_JSON = BASE_DIR/"data"/"items_factorio.json"
+RECIPE_JSON = BASE_DIR/"data"/"recipe_factorio.json"
 TARGET_CATEGORIES = ["item", "ammo", "armor", "gun", "tool", "capsule", "module"]
 
 # JSON files created for items
