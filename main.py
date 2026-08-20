@@ -1,4 +1,4 @@
-from analyzer import(
+from processing.analyzer import(
     print_items_by_stack_size,
     print_recipe_by_fluid,
     print_slow_recipe,
@@ -8,8 +8,8 @@ from analyzer import(
     find_longest_recipe
 )
 
-ITEMS_FACTORIO_JSON = "items_factorio.json"
-RECIPE_JSON = "recipe_factorio.json"
+ITEMS_FACTORIO_JSON = "data/items_factorio.json"
+RECIPE_JSON = "data/recipe_factorio.json"
 
 print_items_by_stack_size(ITEMS_FACTORIO_JSON)
 print_recipe_by_fluid(RECIPE_JSON)
